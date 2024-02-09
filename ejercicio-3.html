@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 3</title>
+  </head>
+  <body>
+    <script>
+      // EJECUTAR EN EL NAVEGADOR
+      let mensaje = prompt("Por favor, ingresa un texto, palabra o mensaje:");
+      let caracterAContar = prompt("Que caracter deseas contar?");
+
+      let arrayCaracteres = mensaje.split("");
+
+      let caracteresCoincidentes = arrayCaracteres.filter(
+        (caracter) => caracter === caracterAContar
+      );
+      let cantidadCaracteres = caracteresCoincidentes.length;
+      alert(
+        `El carácter "${caracterAContar}" se repite ${cantidadCaracteres} veces en "${mensaje}"`
+      );
+    </script>
+  </body>
+</html>
